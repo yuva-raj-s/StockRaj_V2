@@ -1,0 +1,21 @@
+{
+  "transactions": [
+    {
+      "symbol": "TCS.NS",
+      "quantity": 1,
+      "price": 1000,
+      "date": "2025-01-31",
+      "type": "BUY",
+      "notes": "",
+      "timestamp": 1746683099073
+    }
+  ],
+  "holdings": {
+    "TCS.NS": {
+      "quantity": 1,
+      "avgPrice": 1000
+    }
+  },
+  "goals": [],
+  "notes": {}
+}
