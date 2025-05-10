@@ -1,0 +1,66 @@
+@tailwind components;
+
+@layer components {
+  .glass {
+    @apply bg-primary/80 backdrop-blur-lg border border-white/10;
+  }
+  
+  .glass-button {
+    @apply bg-primary/80 hover:bg-secondary/40 
+           text-text-primary hover:text-accent
+           transition-all duration-200 
+           border border-white/10
+           rounded-lg shadow-glass
+           hover:shadow-neon-sm
+           active:scale-95;
+  }
+
+  .glass-card {
+    @apply glass rounded-xl p-6 
+           hover:shadow-glass transition-all duration-300
+           hover:border-accent/20
+           hover:scale-[1.02];
+  }
+
+  .futuristic-input {
+    @apply bg-primary/60 border border-white/10
+           rounded-lg px-4 py-2
+           text-text-primary placeholder-text-secondary/50
+           focus:border-accent/50 focus:ring-1 focus:ring-accent/50
+           transition-all duration-200
+           hover:border-accent/30;
+  }
+
+  .futuristic-panel {
+    @apply glass-card hover:scale-[1.02] 
+           transition-transform duration-300
+           hover:shadow-neon-sm
+           hover:border-accent/20;
+  }
+
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+
+  .text-glow {
+    @apply text-text-primary drop-shadow-[0_0_8px_rgba(0,245,212,0.3)];
+  }
+
+  .hover-glow {
+    @apply hover:shadow-neon-sm 
+           transition-all duration-300
+           hover:border-accent/20;
+  }
+
+  .selected-glow {
+    @apply bg-accent/10 
+           border-accent/30 
+           shadow-neon-sm
+           text-accent;
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+}

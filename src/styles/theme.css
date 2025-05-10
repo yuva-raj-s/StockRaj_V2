@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .app-background {
+    @apply bg-primary text-text-primary min-h-screen;
+  }
+
+  .glass {
+    @apply bg-card/80 backdrop-blur-lg 
+           border border-secondary/20
+           shadow-lg;
+  }
+  
+  .card {
+    @apply bg-gradient-card
+           shadow-lg border border-secondary/20
+           rounded-xl p-6;
+  }
+  
+  .chart-card {
+    @apply bg-gradient-chart
+           shadow-lg border border-secondary/20
+           rounded-xl p-6;
+  }
+
+  .glass-button {
+    @apply px-4 py-2 rounded-lg
+           bg-secondary/20 hover:bg-secondary/30
+           text-accent
+           transition-all duration-200 
+           border border-accent/20
+           active:scale-95
+           hover:shadow-neon-sm;
+  }
+
+  /* Text styles */
+  .text-title {
+    @apply text-text-primary font-bold;
+  }
+
+  .text-body {
+    @apply text-text-secondary;
+  }
+
+  .text-highlight {
+    @apply text-accent;
+  }
+
+  /* Status colors */
+  .text-success {
+    @apply text-emerald-400;
+  }
+
+  .text-danger {
+    @apply text-red-400;
+  }
+
+  .text-warning {
+    @apply text-amber-400;
+  }
+
+  /* Hover effects */
+  .hover-effect {
+    @apply transition-all duration-200 
+           hover:scale-[1.02] 
+           hover:shadow-neon-sm
+           hover:border-accent/30;
+  }
+
+  /* Selection effects */
+  .selected-effect {
+    @apply bg-accent/10 
+           border-accent/30 
+           shadow-neon-sm
+           text-accent;
+  }
+
+  /* Card gradients */
+  .card-gradient {
+    @apply bg-gradient-card 
+           hover:bg-card-hover
+           hover:shadow-neon-sm;
+  }
+
+  .chart-gradient {
+    @apply bg-gradient-chart 
+           hover:bg-chart-hover
+           hover:shadow-neon-sm;
+  }
+}
